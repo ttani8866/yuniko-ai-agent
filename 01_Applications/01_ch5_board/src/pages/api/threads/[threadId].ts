@@ -19,7 +19,7 @@ export default async function handler(
 
     const db = await getDb();
 
-    // スレッド情報取得（板名も含む）
+    // スレッド情報取得
     const thread = await db.get(`
       SELECT 
         t.id,
@@ -33,7 +33,7 @@ export default async function handler(
       FROM threads t
       JOIN boards b ON t.board_id = b.id
       WHERE t.id = ?
-    `, [threadId]) as (ThreadDetail & { isActive: number }) | undefined;
+    `, [threadId]);
 
     if (!thread) {
       return res.status(404).json({ success: false, error: 'Thread not found' });
@@ -57,7 +57,13 @@ export default async function handler(
     `, [threadId]) as Response[];
 
     const threadDetail: ThreadDetail = {
-      ...thread,
+      id: Number(thread.id),
+      boardId: String(thread.boardId),
+      title: String(thread.title),
+      createdAt: String(thread.createdAt),
+      updatedAt: String(thread.updatedAt),
+      resCount: Number(thread.resCount),
+      boardName: String(thread.boardName),
       isActive: Boolean(thread.isActive),
       responses
     };
