@@ -16,42 +16,65 @@
 }
 
 body {
-  background-color: var(--board-bg);
-  color: var(--board-text);
+  background-color: #efefef;
+  color: #000000;
   font-family: "MS PGothic", "IPAMonaPGothic", "Mona", "Meiryo", sans-serif;
-  font-size: 16px; /* 5chは意外と文字が大きい */
+  font-size: 16px;
   line-height: 1.5;
 }
 
+/* 本家5chのレトロなリンク色 */
 a {
-  color: var(--board-link);
-  text-decoration: underline; /* 基本アンダーラインあり */
-}
-
-a:hover {
-  color: var(--board-accent);
+  color: #0000ee;
+  text-decoration: underline;
 }
 
 a:visited {
-  color: var(--board-visited);
+  color: #551a8b;
 }
 
-/* レスの枠組みをよりシンプルに */
+a:hover {
+  color: #ff0000;
+}
+
+/* 5ch風のレス枠（レトロスタイル） */
 .res-item {
-  padding: 10px 0;
+  padding: 15px;
+  margin-bottom: 0;
   border-bottom: 1px solid #ccc;
+  background-color: #efefef;
 }
 
 .res-header {
-  font-weight: normal;
-  margin-bottom: 5px;
+  font-size: 14px;
+  color: #000;
+}
+
+.res-name {
+  color: #228b22;
+  font-weight: bold;
+}
+
+.res-num {
+  color: #cc1105;
+  font-weight: bold;
 }
 
 .res-body {
-  margin-left: 2em;
-  padding: 5px 0;
+  margin-top: 8px;
+  margin-left: 25px;
+  font-size: 16px;
   word-wrap: break-word;
+  color: #000;
 }
+
+/* ヘッダーをよりリッチに */
+.site-header {
+  background: linear-gradient(to bottom, #a00000 0%, #800000 100%);
+  border-bottom: 4px solid #600000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
 
 /* アンカーポップアップ */
 .anchor-popup {
