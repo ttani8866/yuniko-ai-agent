@@ -1,0 +1,106 @@
+import { GetStaticPaths, GetStaticProps } from "next";
+import { useRouter } from "next/router";
+
+/**
+ * 型定義（最小限）
+ */
+type Response = {
+  id: number;
+  body: string;
+};
+
+type Thread = {
+  id: string;
+  title: string;
+  isActive?: boolean;
+};
+
+type ThreadDetail = Thread & {
+  isActive: boolean;
+  responses: Response[];
+};
+
+/**
+ * ダミーデータ（DBなし前提）
+ */
+const THREADS: Thread[] = [
+  { id: "1", title: "ニュース速報", isActive: true },
+  { id: "2", title: "技術・プログラミング", isActive: true },
+];
+
+const RESPONSES: Record<string, Response[]> = {
+  "1": [
+    { id: 1, body: "速報きたな" },
+    { id: 2, body: "ソースは？" },
+  ],
+  "2": [
+    { id: 1, body: "Next.js便利すぎる" },
+    { id: 2, body: "静的化が鬼門" },
+  ],
+};
+
+/**
+ * ページ本体
+ */
+export default function ThreadPage({ thread }: { thread: ThreadDetail }) {
+  const router = useRouter();
+
+  // 静的生成中のガード
+  if (router.isFallback) {
+    return <div>Loading...</div>;
+  }
+
+  return (
+    <main style={{ padding: 24 }}>
+      <h1>{thread.title}</h1>
+
+      <ul>
+        {thread.responses.map((res) => (
+          <li key={res.id}>{res.body}</li>
+        ))}
+      </ul>
+    </main>
+  );
+}
+
+/**
+ * 静的パス生成
+ */
+export const getStaticPaths: GetStaticPaths = async () => {
+  return {
+    paths: THREADS.map((t) => ({
+      params: {
+        boardId: "default",
+        threadId: t.id,
+      },
+    })),
+    fallback: false,
+  };
+};
+
+/**
+ * 静的Props生成
+ */
+export const getStaticProps: GetStaticProps = async (context) => {
+  const threadId = context.params?.threadId as string;
+
+  const thread = THREADS.find((t) => t.id === threadId);
+
+  if (!thread) {
+    return {
+      notFound: true,
+    };
+  }
+
+  const threadDetail: ThreadDetail = {
+    ...thread,
+    isActive: Boolean(thread.isActive),
+    responses: RESPONSES[threadId] ?? [],
+  };
+
+  return {
+    props: {
+      thread: threadDetail,
+    },
+  };
+};

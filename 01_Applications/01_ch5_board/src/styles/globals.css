@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --board-bg: #efefef;
+  --board-header: #800000;
+  --board-header-text: #ffffff;
+  --board-link: #0000ff;
+  --board-visited: #660099;
+  --board-text: #000000;
+  --board-accent: #cc1105;
+  --board-border: #aaaaaa;
+  --board-res: #f0e0d6;
+  --board-res-border: #d9bfb7;
+}
+
+body {
+  background-color: var(--board-bg);
+  color: var(--board-text);
+  font-family: "MS PGothic", "IPAMonaPGothic", "Mona", "Meiryo", sans-serif;
+  font-size: 16px; /* 5chは意外と文字が大きい */
+  line-height: 1.5;
+}
+
+a {
+  color: var(--board-link);
+  text-decoration: underline; /* 基本アンダーラインあり */
+}
+
+a:hover {
+  color: var(--board-accent);
+}
+
+a:visited {
+  color: var(--board-visited);
+}
+
+/* レスの枠組みをよりシンプルに */
+.res-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.res-header {
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.res-body {
+  margin-left: 2em;
+  padding: 5px 0;
+  word-wrap: break-word;
+}
+
+/* アンカーポップアップ */
+.anchor-popup {
+  position: absolute;
+  z-index: 100;
+  max-width: 600px;
+  background: var(--board-res);
+  border: 1px solid var(--board-res-border);
+  padding: 8px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* スクロールバー */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
