@@ -14,7 +14,7 @@ export function Header() {
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity text-white">
             <MessageSquare className="w-8 h-8 text-white" />
-            <h1 className="text-3xl font-black tracking-tighter text-white">５ch風掲示板</h1>
+            <h1 className="text-3xl font-black tracking-tighter text-white">５ch風掲示板(最新)</h1>
           </Link>
           <nav>
             <Link 
