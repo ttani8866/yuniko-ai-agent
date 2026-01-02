@@ -30,7 +30,7 @@ export default function BoardPage({ boardId }: { boardId: string }) {
           <ul className="space-y-2">
             {DUMMY_THREADS.map((thread) => (
               <li key={thread.id}>
-                <Link href={`/zatsudan/${thread.id}`} className="text-board-link hover:underline">
+                <Link href={`/zatsudan/1`} className="text-board-link hover:underline">
                   {thread.id}: {thread.title} ({thread.resCount})
                 </Link>
               </li>
