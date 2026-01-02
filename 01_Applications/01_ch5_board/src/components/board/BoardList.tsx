@@ -40,11 +40,11 @@ export function BoardList({ boards }: BoardListProps) {
             {groupedBoards[category].map((board, index) => (
               <Link
                 key={board.id}
-                href={board.id === 'zatsudan' ? '/zatsudan' : '#'}
+                href={board.id === 'zatsudan' ? '/zatsudan' : '/'}
                 className={`
                   flex items-center justify-between p-3 hover:bg-gray-50 transition-colors
                   ${index !== groupedBoards[category].length - 1 ? 'border-b border-board-border' : ''}
-                  ${board.id !== 'zatsudan' ? 'opacity-50 cursor-not-allowed' : ''}
+                  ${board.id !== 'zatsudan' ? 'opacity-50' : ''}
                 `}
               >
                 <div>
