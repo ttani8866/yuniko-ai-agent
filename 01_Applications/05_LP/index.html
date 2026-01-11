@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AIを用いた開発であるバイブコーディングの短期講座。感覚で学ぶ、新しいコーディング学習法。">
+    <title>バイブコーディング短期講座 | AI時代の新しいコーディング学習法</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header" id="header">
+        <!-- トップバー -->
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <a href="#contact" class="header-top-link">お問い合わせはこちら</a>
+                    <a href="#download" class="header-top-link">資料ダウンロード</a>
+                </div>
+            </div>
+        </div>
+        <!-- メインヘッダー -->
+        <div class="header-main">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <h1>VibeCoding</h1>
+                    </div>
+                    <nav class="nav" id="nav">
+                        <ul class="nav-list">
+                            <li><a href="#features">特徴</a></li>
+                            <li><a href="#curriculum">カリキュラム</a></li>
+                            <li><a href="#testimonials">受講生の声</a></li>
+                            <li><a href="#pricing">料金</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                        </ul>
+                    </nav>
+                    <a href="#cta" class="btn btn-primary btn-header">無料体験</a>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="メニューを開く">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ヒーローセクション -->
+    <section class="hero" id="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">感覚で学ぶ、AI時代の新しいコーディング</h1>
+                <p class="hero-subtitle">コード暗記不要。短期間で実践的なAI開発スキルを習得</p>
+                <div class="hero-cta">
+                    <a href="#cta" class="btn btn-primary btn-large">今すぐ無料体験する</a>
+                    <a href="#features" class="btn btn-secondary btn-large">資料をダウンロード</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">受講生数</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">満足度</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">4週間</span>
+                        <span class="stat-label">短期集中</span>
+                    </div>
+                </div>
+                <!-- 装飾要素 -->
+                <div class="hero-decorations">
+                    <div class="hero-circle hero-circle-1">
+                        <span>いつでも、どこでも、ビジネスも</span>
+                    </div>
+                    <div class="hero-circle hero-circle-2">
+                        <span>実践の基礎知識</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 問題提起セクション -->
+    <section class="problem" id="problem">
+        <div class="container">
+            <h2 class="section-title">こんな悩みありませんか？</h2>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">📚</div>
+                    <h3>コードを暗記するのが大変</h3>
+                    <p>たくさんの構文を覚えるのに時間がかかり、挫折してしまう</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">❓</div>
+                    <h3>何から始めればいいかわからない</h3>
+                    <p>情報が多すぎて、どこから手をつけていいか迷ってしまう</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">⏰</div>
+                    <h3>時間がない</h3>
+                    <p>仕事や学校で忙しく、学習時間を確保できない</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">😔</div>
+                    <h3>挫折してしまった経験がある</h3>
+                    <p>以前プログラミングを学ぼうとしたが、続かずに諦めてしまった</p>
+                </div>
+            </div>
+            <div class="problem-solution">
+                <p class="solution-text">バイブコーディングなら、<strong>感覚で学べます</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 解決策セクション -->
+    <section class="solution" id="solution">
+        <div class="container">
+            <div class="solution-content">
+                <div class="solution-text">
+                    <div class="point-badge">Concept</div>
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 20px;">バイブコーディングとは？</h2>
+                    <p class="solution-description">
+                        バイブコーディングは、AIツールを活用しながら感覚的にコーディングを学ぶ新しい学習法です。
+                        コードを暗記するのではなく、<strong>コーディングの感覚</strong>を身につけることで、
+                        短期間で実践的な開発スキルを習得できます。
+                    </p>
+                    <ul class="solution-features">
+                        <li>✅ AIツールを活用した効率的な開発</li>
+                        <li>✅ コード暗記不要の感覚的アプローチ</li>
+                        <li>✅ 実践的なプロジェクトベースの学習</li>
+                        <li>✅ 短期間で成果を実感できる</li>
+                    </ul>
+                </div>
+                <div class="solution-image">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800&h=600" alt="AIコーディングのイメージ" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 講座の特徴セクション -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">バイブコーディング講座が選ばれる<br><span style="color: var(--color-primary); font-size: 1.2em;">3つのポイント</span></h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="point-label">Point.1</div>
+                    <div class="feature-image-sm">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=400" alt="Point 1" loading="lazy">
+                    </div>
+                    <h3>AIツール完全活用</h3>
+                    <p>ChatGPT、GitHub Copilotなど最新AIツールを実践的に学び、効率的な開発手法を身につけます。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="point-label">Point.2</div>
+                    <div class="feature-image-sm">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=400" alt="Point 2" loading="lazy">
+                    </div>
+                    <h3>感覚的学習</h3>
+                    <p>コードを書く感覚を身につける、暗記不要の学習法。自然とコーディングスキルが向上します。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="point-label">Point.3</div>
+                    <div class="feature-image-sm">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=400" alt="Point 3" loading="lazy">
+                    </div>
+                    <h3>短期集中</h3>
+                    <p>4週間で実践的なスキルを習得。無駄のないカリキュラムで、最短ルートで成長できます。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- カリキュラムセクション -->
+    <section class="curriculum" id="curriculum">
+        <div class="container">
+            <h2 class="section-title">4週間で学ぶ、実践的なカリキュラム</h2>
+            <div class="curriculum-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">Week 1</div>
+                    <div class="timeline-content">
+                        <h3>AIツール基礎と環境構築</h3>
+                        <ul>
+                            <li>ChatGPT、GitHub Copilotの使い方</li>
+                            <li>開発環境の構築</li>
+                            <li>基本的なコーディングの感覚を掴む</li>
+                        </ul>
+                        <p class="timeline-outcome"><strong>成果物:</strong> 簡単なWebページ</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">Week 2</div>
+                    <div class="timeline-content">
+                        <h3>感覚的コーディングの基礎</h3>
+                        <ul>
+                            <li>HTML/CSSの感覚的理解</li>
+                            <li>JavaScriptの基礎</li>
+                            <li>AIツールを使った効率的な開発</li>
+                        </ul>
+                        <p class="timeline-outcome"><strong>成果物:</strong> インタラクティブなWebアプリ</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">Week 3</div>
+                    <div class="timeline-content">
+                        <h3>実践プロジェクト開発</h3>
+                        <ul>
+                            <li>フルスタック開発の基礎</li>
+                            <li>データベース連携</li>
+                            <li>APIの活用</li>
+                        </ul>
+                        <p class="timeline-outcome"><strong>成果物:</strong> 本格的なWebアプリケーション</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">Week 4</div>
+                    <div class="timeline-content">
+                        <h3>ポートフォリオ作成と就活支援</h3>
+                        <ul>
+                            <li>ポートフォリオサイトの作成</li>
+                            <li>GitHub活用</li>
+                            <li>就職・転職活動のサポート</li>
+                        </ul>
+                        <p class="timeline-outcome"><strong>成果物:</strong> ポートフォリオサイト</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 受講生の声セクション -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">受講生の声</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-avatar">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150&h=150" alt="受講生A" loading="lazy">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">「コードを暗記する必要がなく、感覚的に理解できました。AIツールの活用方法も学べて、開発スピードが格段に上がりました！」</p>
+                        <p class="testimonial-author">Aさん（25歳・転職希望）</p>
+                        <p class="testimonial-result">成果: ポートフォリオサイトを完成させ、転職活動を開始</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150&h=150" alt="受講生B" loading="lazy">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">「4週間で実際のアプリを作れるようになりました。講師のサポートが手厚く、挫折することなく最後まで続けられました。」</p>
+                        <p class="testimonial-author">Bさん（30歳・エンジニア志望）</p>
+                        <p class="testimonial-result">成果: Webアプリケーションを3つ作成</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150&h=150" alt="受講生C" loading="lazy">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">「バイブコーディングの考え方が本当に画期的でした。従来の学習法では挫折していた私でも、楽しく学べました。」</p>
+                        <p class="testimonial-author">Cさん（22歳・学生）</p>
+                        <p class="testimonial-result">成果: インターンシップで採用</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials-nav">
+                <button class="testimonial-nav-btn prev" id="testimonialPrev" aria-label="前へ">‹</button>
+                <div class="testimonial-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+                <button class="testimonial-nav-btn next" id="testimonialNext" aria-label="次へ">›</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 講師紹介セクション -->
+    <section class="instructor" id="instructor">
+        <div class="container">
+            <h2 class="section-title">講師紹介</h2>
+            <div class="instructor-content">
+                <div class="instructor-image">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400&h=400" alt="講師プロフィール" loading="lazy">
+                </div>
+                <div class="instructor-info">
+                    <h3>山田 太郎</h3>
+                    <p class="instructor-title">AI開発エキスパート / 10年の開発経験</p>
+                    <div class="instructor-badges">
+                        <span class="badge">AI開発10年</span>
+                        <span class="badge">プロジェクト100+</span>
+                        <span class="badge">受講生500+</span>
+                    </div>
+                    <div class="instructor-experience">
+                        <h4>経歴</h4>
+                        <ul>
+                            <li>大手IT企業でAI開発プロジェクトを多数リード</li>
+                            <li>GitHub Copilot、ChatGPTなどのAIツールの早期導入者</li>
+                            <li>技術書の執筆・監修経験あり</li>
+                        </ul>
+                    </div>
+                    <div class="instructor-message">
+                        <blockquote>
+                            「バイブコーディングは、AI時代に最適化された新しい学習法です。
+                            コードを暗記するのではなく、感覚で理解することで、短期間で実践的なスキルを身につけられます。
+                            一緒に、AI時代の開発者を目指しましょう！」
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 料金プランセクション -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2 class="section-title">無料トライアルをお試し後、ご満足頂けましたら下記プランにてお使いいただけます。</h2>
+            <div class="pricing-highlight">
+                <p>いずれのプランも「初期費用」&「運用費用」なし!</p>
+            </div>
+            <div class="pricing-list">
+                <div class="pricing-list-item">
+                    <div class="pricing-list-period">6ヶ月プラン</div>
+                    <div class="pricing-list-price">¥29,800<span class="pricing-list-unit">/月</span></div>
+                </div>
+                <div class="pricing-list-item">
+                    <div class="pricing-list-period">12ヶ月プラン</div>
+                    <div class="pricing-list-price">¥24,800<span class="pricing-list-unit">/月</span></div>
+                </div>
+                <div class="pricing-list-item">
+                    <div class="pricing-list-period">24ヶ月プラン</div>
+                    <div class="pricing-list-price">¥19,800<span class="pricing-list-unit">/月</span></div>
+                </div>
+                <div class="pricing-list-item">
+                    <div class="pricing-list-period">永年プラン</div>
+                    <div class="pricing-list-price">お問い合わせ</div>
+                </div>
+            </div>
+            <div class="pricing-notice">
+                <p>✨ 早期申し込み特典: 2025年2月末までにお申し込みの方に20%OFF</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQセクション -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title">よくある質問</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>プログラミング初心者でも大丈夫ですか？</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>はい、大丈夫です。バイブコーディングは初心者向けに設計されており、プログラミング経験がなくても感覚的に学べるカリキュラムになっています。また、講師による個別サポートも充実しているため、安心して受講できます。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>どのくらいの時間が必要ですか？</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>週に10-15時間程度の学習時間を想定しています。4週間で合計40-60時間の学習時間で、実践的なスキルを習得できます。忙しい方でも、自分のペースで学習を進められるよう、録画講座も提供しています。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>オンラインのみですか？</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>はい、すべてオンラインで受講できます。録画講座とライブセッション（プレミアムプラン）を組み合わせて学習を進めます。場所を選ばず、自宅やカフェなど、お好きな場所で受講できます。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>就職・転職支援はありますか？</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>プレミアムプランでは、ポートフォリオレビューや就職・転職活動のサポートを提供しています。また、コミュニティ内で求人情報の共有も行っています。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>返金保証はありますか？</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>初回受講から7日以内であれば、全額返金保証を提供しています。講座内容が期待と異なる場合や、学習を続けられないと判断した場合にご利用いただけます。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>必要な環境・ツールは？</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>パソコン（Windows/Mac/Linux）とインターネット接続があれば受講できます。開発環境の構築方法は講座内で詳しく説明します。AIツール（ChatGPT、GitHub Copilot）のアカウント取得も必要ですが、無料プランでも受講可能です。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 最終CTAセクション -->
+    <section class="cta-final" id="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">今すぐ始めませんか？</h2>
+                <p class="cta-subtitle">無料体験で、バイブコーディングを体感してください</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-cta">無料体験トライアルはこちら</a>
+                    <a href="#contact" class="btn btn-cta-secondary">お問い合わせはこちら</a>
+                </div>
+                <p class="cta-note">クレジットカード不要・5分で申し込み完了</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>VibeCoding</h3>
+                    <p>AI時代の新しいコーディング学習法</p>
+                </div>
+                <div class="footer-section">
+                    <h4>リンク</h4>
+                    <ul>
+                        <li><a href="#features">特徴</a></li>
+                        <li><a href="#curriculum">カリキュラム</a></li>
+                        <li><a href="#pricing">料金</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>法的事項</h4>
+                    <ul>
+                        <li><a href="#terms">利用規約</a></li>
+                        <li><a href="#privacy">プライバシーポリシー</a></li>
+                        <li><a href="#commerce">特定商取引法に基づく表記</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>お問い合わせ</h4>
+                    <p>Email: info@vibecoding.jp</p>
+                    <p>Tel: 03-1234-5678</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 VibeCoding. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

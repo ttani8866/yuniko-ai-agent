@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>バイブコーディング学習ロードマップ</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Favicon (絵文字で代用) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎯</text></svg>">
+</head>
+<body>
+  <div class="container">
+    <!-- ヘッダー -->
+    <header class="header">
+      <h1>
+        <span class="emoji">🎯</span>
+        バイブコーディング学習ロードマップ
+      </h1>
+      <p>AIと一緒にプログラミングを学ぶ、あなた専用の学習管理アプリ</p>
+    </header>
+    
+    <!-- 全体進捗 -->
+    <div class="overall-progress">
+      <div class="overall-progress-header">
+        <span class="overall-progress-title">📊 全体の進捗</span>
+        <span class="overall-progress-stats">
+          <span class="highlight">0%</span> 達成 (0/20)
+        </span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-bar-fill" style="width: 0%"></div>
+      </div>
+    </div>
+    
+    <!-- ロードマップ（JSで描画） -->
+    <main id="roadmap-container">
+      <!-- ここにレベルカードが動的に挿入される -->
+    </main>
+    
+    <!-- フッター -->
+    <footer class="footer">
+      <p>💾 進捗は自動保存されます（ブラウザのlocalStorage）</p>
+      <button class="reset-button" onclick="resetProgress()">
+        🔄 進捗をリセット
+      </button>
+      <p style="margin-top: 16px;">
+        Made with ❤️ for <a href="#">AI Agent講座</a><br>
+        <span style="font-size: 0.75rem; opacity: 0.7;">Cursor / Antigravity / Replit / bolt / v0 対応</span>
+      </p>
+    </footer>
+  </div>
+  
+  <!-- スクリプト読み込み -->
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
